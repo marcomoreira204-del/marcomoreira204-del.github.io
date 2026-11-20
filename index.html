@@ -8,16 +8,31 @@
   body { font-family: system-ui, sans-serif; max-width: 680px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #222; }
   h1 { margin-bottom: 4px; }
   a { color: #c4302b; }
+  nav { margin: 8px 0 28px; font-size: 15px; }
+  nav a { margin-right: 16px; }
   footer { margin-top: 48px; font-size: 14px; color: #666; }
+  footer a { margin-right: 16px; }
 </style>
 </head>
 <body>
   <h1>auto clipper</h1>
-  <p>auto clipper is a personal tool used to upload gaming clips to the ClipsGG204 YouTube channel
-     (<a href="https://www.youtube.com/@ClipsGG204">youtube.com/@ClipsGG204</a>).</p>
-  <p>It signs in with Google only to upload videos to the channel owner's own YouTube account.
-     It is not offered to the public and does not access anyone else's account.</p>
+  <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+
+  <p>auto clipper is a desktop tool used by the ClipsGG204 gaming channel to publish short gaming clips.
+     It cuts highlight clips from gameplay videos and posts them, with a title and caption, to the channel's own
+     accounts on YouTube (<a href="https://www.youtube.com/@ClipsGG204">youtube.com/@ClipsGG204</a>) and TikTok.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The channel owner signs in once with TikTok (Login Kit) and Google to give the tool permission to post.</li>
+    <li>The tool cuts a gameplay video into short vertical clips and writes a title and caption for each.</li>
+    <li>Once a day it uploads the next clip to the connected accounts using the TikTok Content Posting API
+        and the YouTube Data API, using the privacy setting the account allows.</li>
+  </ol>
+  <p>The tool only posts to accounts that have signed in and given permission. It does not read messages,
+     followers or any other account data.</p>
+
   <p>Contact: <a href="mailto:pandoranikol204@gmail.com">pandoranikol204@gmail.com</a></p>
-  <footer><a href="privacy.html">Privacy Policy</a></footer>
+  <footer><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></footer>
 </body>
 </html>
